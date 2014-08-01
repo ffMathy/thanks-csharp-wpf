@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="Thanks.Option"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:thanks="clr-namespace:Thanks"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" d:DataContext="{d:DesignInstance d:Type=thanks:Option}">
+    <Grid>
+        <Border BorderBrush="#80000000" BorderThickness="1,1,0,0">
+            <Border BorderBrush="#30000000" BorderThickness="1,1,0,0" />
+        </Border>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label HorizontalAlignment="Center">Funding</Label>
+            <TextBlock Grid.Row="1" HorizontalAlignment="Center">Select this option to help fund future development.</TextBlock>
+            <ItemsControl Grid.Row="2" ItemsSource="{Binding Icons}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </Grid>
+    </Grid>
+</UserControl>
