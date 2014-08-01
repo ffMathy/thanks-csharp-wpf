@@ -2,92 +2,43 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:funding="clr-namespace:Thanks.Icons.Funding"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <DrawingImage>
-        <DrawingImage.Drawing>
-            <DrawingGroup Opacity="1">
-                <DrawingGroup.Children>
+             d:DesignHeight="300" x:Name="MainControl" x:FieldModifier="private" d:DesignWidth="300" d:DataContext="{d:DesignInstance d:Type=funding:GitTip}">
+    <Image Stretch="Uniform">
+        <Image.Source>
+            <DrawingImage>
+                <DrawingImage.Drawing>
                     <DrawingGroup Opacity="1">
                         <DrawingGroup.Children>
-                            <DrawingGroup Opacity="1" Transform="5.13031706287787,0,0,-5.13031706287787,-15.9261248243449,189.395699605969">
+                            <DrawingGroup Opacity="1">
                                 <DrawingGroup.Children>
-                                    <DrawingGroup Opacity="1">
+                                    <DrawingGroup Opacity="1" Transform="5.13031706287787,0,0,-5.13031706287787,-15.9261248243449,189.395699605969">
                                         <DrawingGroup.Children>
                                             <DrawingGroup Opacity="1">
                                                 <DrawingGroup.Children>
                                                     <DrawingGroup Opacity="1">
                                                         <DrawingGroup.Children>
-                                                            <GeometryDrawing Brush="#FFFFFFFF" Pen="{x:Null}">
-                                                                <GeometryDrawing.Geometry>
-                                                                    <PathGeometry FillRule="Nonzero" Figures="M46.9475860595703,15.5248880386353C48.8265800476074,15.5248880386353,50.2055816650391,16.3248863220215,51.2555809020996,17.5778865814209L51.2555809020996,21.7128887176514 46.9785842895508,21.7128887176514 46.9785842895508,19.8188858032227 49.1715812683105,19.8188858032227 49.1715812683105,18.4548892974854C48.6065788269043,17.8908882141113 47.7295799255371,17.6558876037598 46.9305839538574,17.6558876037598 45.1305809020996,17.6558876037598 43.626579284668,19.1598854064941 43.626579284668,21.1498908996582 43.626579284668,23.1068878173828 45.0675811767578,24.6278877258301 46.9305839538574,24.6278877258301 47.9495849609375,24.6278877258301 48.8735847473145,24.1098823547363 49.4845809936523,23.3898887634277L51.145580291748,24.8308906555176C50.0795822143555,26.0678901672363 48.7015800476074,26.7728881835938 46.9475860595703,26.7728881835938 43.8445816040039,26.7728881835938 41.3705787658691,24.2348899841309 41.3705787658691,21.1498908996582 41.3705787658691,18.0328884124756 43.8145790100098,15.5248880386353 46.9475860595703,15.5248880386353z" />
-                                                                </GeometryDrawing.Geometry>
-                                                            </GeometryDrawing>
+                                                            <DrawingGroup Opacity="1">
+                                                                <DrawingGroup.Children>
+                                                                    <GeometryDrawing Pen="{x:Null}" Brush="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}">
+                                                                        <GeometryDrawing.Geometry>
+                                                                            <PathGeometry FillRule="EvenOdd" Figures="M18.6077823638916,13.5808868408203L11.7837820053101,22.8198890686035C11.2067823410034,23.4998893737793 10.6297826766968,25.8628883361816 12.6117849349976,27.1698913574219 14.2997846603394,28.2828903198242 15.9037847518921,27.439884185791 16.7437858581543,26.462890625 17.0577831268311,26.0988883972168 17.594783782959,25.6698913574219 18.6077823638916,25.6698913574219 19.6227836608887,25.6698913574219 20.1597843170166,26.0988883972168 20.472785949707,26.462890625 21.3127841949463,27.4398880004883 22.916784286499,28.2828903198242 24.6047859191895,27.1698913574219 26.5867824554443,25.8628921508789 26.0097846984863,23.4998893737793 25.4327831268311,22.8198890686035L18.6077823638916,13.5808868408203z M18.5046863555908,6.51658821105957C26.7906856536865,6.51658821105957 33.5046844482422,13.2315883636475 33.5046844482422,21.5165901184082 33.5046844482422,29.8005905151367 26.7906856536865,36.5165901184082 18.5046863555908,36.5165901184082 10.220685005188,36.5165901184082 3.50468397140503,29.8005905151367 3.50468373298645,21.5165901184082 3.50468397140503,13.2315893173218 10.2206830978394,6.51658821105957 18.5046863555908,6.51658821105957z" />
+                                                                        </GeometryDrawing.Geometry>
+                                                                    </GeometryDrawing>
+                                                                </DrawingGroup.Children>
+                                                            </DrawingGroup>
                                                         </DrawingGroup.Children>
-                                                    </DrawingGroup>
-                                                    <DrawingGroup Opacity="1">
-                                                        <DrawingGroup.Children>
-                                                            <GeometryDrawing Brush="#FFFFFFFF" Pen="{x:Null}">
-                                                                <GeometryDrawing.Geometry>
-                                                                    <PathGeometry FillRule="Nonzero" Figures="M55.330379486084,15.6674880981445L60.2953758239746,15.6674880981445 60.2953758239746,17.5154895782471 58.9333801269531,17.5154895782471 58.9333801269531,24.7684898376465 60.2953758239746,24.7684898376465 60.2953758239746,26.6314888000488 55.330379486084,26.6314888000488 55.330379486084,24.7684898376465 56.6923789978027,24.7684898376465 56.6923789978027,17.5154895782471 55.330379486084,17.5154895782471 55.330379486084,15.6674880981445z" />
-                                                                </GeometryDrawing.Geometry>
-                                                            </GeometryDrawing>
-                                                        </DrawingGroup.Children>
-                                                    </DrawingGroup>
-                                                    <DrawingGroup Opacity="1">
-                                                        <DrawingGroup.Children>
-                                                            <GeometryDrawing Brush="#FFFFFFFF" Pen="{x:Null}">
-                                                                <GeometryDrawing.Geometry>
-                                                                    <PathGeometry FillRule="Nonzero" Figures="M65.9309692382813,15.6674880981445L68.1869659423828,15.6674880981445 68.1869659423828,24.564489364624 70.2859725952148,24.564489364624 70.2859725952148,26.6314888000488 63.8309707641602,26.6314888000488 63.8309707641602,24.564489364624 65.9309692382813,24.564489364624 65.9309692382813,15.6674880981445z" />
-                                                                </GeometryDrawing.Geometry>
-                                                            </GeometryDrawing>
-                                                        </DrawingGroup.Children>
-                                                    </DrawingGroup>
-                                                    <DrawingGroup Opacity="1">
-                                                        <DrawingGroup.Children>
-                                                            <GeometryDrawing Brush="#FFFFFFFF" Pen="{x:Null}">
-                                                                <GeometryDrawing.Geometry>
-                                                                    <PathGeometry FillRule="Nonzero" Figures="M75.6223754882813,15.6674880981445L77.8773498535156,15.6674880981445 77.8773498535156,24.564489364624 79.9753494262695,24.564489364624 79.9753494262695,26.6314888000488 73.5213623046875,26.6314888000488 73.5213623046875,24.564489364624 75.6223754882813,24.564489364624 75.6223754882813,15.6674880981445z" />
-                                                                </GeometryDrawing.Geometry>
-                                                            </GeometryDrawing>
-                                                        </DrawingGroup.Children>
-                                                    </DrawingGroup>
-                                                    <DrawingGroup Opacity="1">
-                                                        <DrawingGroup.Children>
-                                                            <GeometryDrawing Brush="#FFFFFFFF" Pen="{x:Null}">
-                                                                <GeometryDrawing.Geometry>
-                                                                    <PathGeometry FillRule="Nonzero" Figures="M83.5207748413086,15.6674890518188L88.4867706298828,15.6674890518188 88.4867706298828,17.5154895782471 87.1237640380859,17.5154895782471 87.1237640380859,24.7684898376465 88.4867706298828,24.7684898376465 88.4867706298828,26.6314888000488 83.5207748413086,26.6314888000488 83.5207748413086,24.7684898376465 84.8817749023438,24.7684898376465 84.8817749023438,17.5154895782471 83.5207748413086,17.5154895782471 83.5207748413086,15.6674890518188z" />
-                                                                </GeometryDrawing.Geometry>
-                                                            </GeometryDrawing>
-                                                        </DrawingGroup.Children>
-                                                    </DrawingGroup>
-                                                    <DrawingGroup Opacity="1">
-                                                        <DrawingGroup.Children>
-                                                            <GeometryDrawing Brush="#FFFFFFFF" Pen="{x:Null}">
-                                                                <GeometryDrawing.Geometry>
-                                                                    <PathGeometry FillRule="Nonzero" Figures="M95.1946716308594,21.4782905578613L95.1946716308594,24.5952911376953 96.6206741333008,24.5952911376953C97.7166748046875,24.5952911376953 98.3586730957031,24.0312881469727 98.3586730957031,23.0292892456055 98.3586730957031,22.0262908935547 97.7016754150391,21.4782905578613 96.6206741333008,21.4782905578613L95.1946716308594,21.4782905578613z M92.9716720581055,15.6672859191895L95.1946716308594,15.6672859191895 95.1946716308594,19.4422874450684 96.9656753540039,19.4422874450684C99.1266632080078,19.4422874450684 100.504661560059,20.8212871551514 100.504661560059,23.0292873382568 100.504661560059,25.2372894287109 99.1266708374023,26.6322898864746 96.9656753540039,26.6322898864746L92.9716720581055,26.6322898864746 92.9716720581055,15.6672887802124 92.9716720581055,15.6672868728638 92.9716720581055,15.6672859191895z" />
-                                                                </GeometryDrawing.Geometry>
-                                                            </GeometryDrawing>
-                                                        </DrawingGroup.Children>
-                                                    </DrawingGroup>
-                                                    <DrawingGroup Opacity="1">
-                                                        <DrawingGroup.Children>
-                                                            <GeometryDrawing Brush="#FFFFFFFF" Pen="{x:Null}">
-                                                                <GeometryDrawing.Geometry>
-                                                                    <PathGeometry FillRule="EvenOdd" Figures="M18.6077823638916,13.5808868408203L11.7837820053101,22.8198890686035C11.2067823410034,23.4998893737793 10.6297826766968,25.8628883361816 12.6117849349976,27.1698913574219 14.2997846603394,28.2828903198242 15.9037847518921,27.439884185791 16.7437858581543,26.462890625 17.0577831268311,26.0988883972168 17.594783782959,25.6698913574219 18.6077823638916,25.6698913574219 19.6227836608887,25.6698913574219 20.1597843170166,26.0988883972168 20.472785949707,26.462890625 21.3127841949463,27.4398880004883 22.916784286499,28.2828903198242 24.6047859191895,27.1698913574219 26.5867824554443,25.8628921508789 26.0097846984863,23.4998893737793 25.4327831268311,22.8198890686035L18.6077823638916,13.5808868408203z M18.5046863555908,6.51658821105957C26.7906856536865,6.51658821105957 33.5046844482422,13.2315883636475 33.5046844482422,21.5165901184082 33.5046844482422,29.8005905151367 26.7906856536865,36.5165901184082 18.5046863555908,36.5165901184082 10.220685005188,36.5165901184082 3.50468397140503,29.8005905151367 3.50468373298645,21.5165901184082 3.50468397140503,13.2315893173218 10.2206830978394,6.51658821105957 18.5046863555908,6.51658821105957z" />
-                                                                </GeometryDrawing.Geometry>
-                                                            </GeometryDrawing>
-                                                        </DrawingGroup.Children>
+                                                        <DrawingGroup.ClipGeometry>
+                                                            <GeometryGroup>
+                                                                <GeometryGroup.Children>
+                                                                    <StreamGeometry>M-1.494816,41.51609L105.505173,41.51609 105.505173,1.51609 -1.494816,1.51609 -1.494816,41.51609z</StreamGeometry>
+                                                                </GeometryGroup.Children>
+                                                            </GeometryGroup>
+                                                        </DrawingGroup.ClipGeometry>
                                                     </DrawingGroup>
                                                 </DrawingGroup.Children>
-                                                <DrawingGroup.ClipGeometry>
-                                                    <GeometryGroup>
-                                                        <GeometryGroup.Children>
-                                                            <StreamGeometry>M-1.494816,41.51609L105.505173,41.51609 105.505173,1.51609 -1.494816,1.51609 -1.494816,41.51609z</StreamGeometry>
-                                                        </GeometryGroup.Children>
-                                                    </GeometryGroup>
-                                                </DrawingGroup.ClipGeometry>
                                             </DrawingGroup>
                                         </DrawingGroup.Children>
                                     </DrawingGroup>
@@ -95,8 +46,8 @@
                             </DrawingGroup>
                         </DrawingGroup.Children>
                     </DrawingGroup>
-                </DrawingGroup.Children>
-            </DrawingGroup>
-        </DrawingImage.Drawing>
-    </DrawingImage>
+                </DrawingImage.Drawing>
+            </DrawingImage>
+        </Image.Source>
+    </Image>
 </UserControl>

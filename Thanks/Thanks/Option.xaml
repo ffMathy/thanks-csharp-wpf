@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:thanks="clr-namespace:Thanks"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300" d:DataContext="{d:DesignInstance d:Type=thanks:Option}">
+             d:DesignHeight="300" x:Name="MainControl" x:FieldModifier="private"  d:DesignWidth="300" d:DataContext="{d:DesignInstance d:Type=thanks:Option}">
     <Grid>
         <Border BorderBrush="#80000000" BorderThickness="1,1,0,0">
             <Border BorderBrush="#30000000" BorderThickness="1,1,0,0" />

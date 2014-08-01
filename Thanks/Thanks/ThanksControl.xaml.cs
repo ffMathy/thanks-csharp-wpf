@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Thanks
 {
     /// <summary>
-    /// Interaction logic for UserControl1.xaml
+    /// Interaction logic for ThanksControl.xaml
     /// </summary>
-    public partial class UserControl1 : UserControl
+    public partial class ThanksControl : UserControl
     {
-        public UserControl1()
+        public ThanksControl()
         {
             InitializeComponent();
         }
